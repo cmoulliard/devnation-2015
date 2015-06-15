@@ -25,9 +25,7 @@ image::{revealjs_cover_image}[]
 // ************** who - christian ********
 == Who
 
-Picture
-
-Right
+image:christian-posta.png[]
 
 Principal Middleware Specialist/Architect
 Blog: http://christianposta.com/blog
@@ -56,7 +54,7 @@ Frequent blogger and speaker about open-source technology!
 // ************** cost of change ********
 == &nbsp;
 
-image:cat.png[]
+image:cat.png[width="95%",height="95%]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -68,7 +66,7 @@ image:cat.png[]
 *Cost of change*
 
 [#cover-logo]
-image::{revealjs_cover_image}[]
+image::{revealjs_cover_image}[width="95%",height="95%]
 
 // ************** cost of change ********
 == Cost of change
@@ -80,7 +78,7 @@ image::{revealjs_cover_image}[]
 
 Float right
 
-image:change.png[]
+image:change.png[width="95%",height="95%]
 
 Bottom
 
@@ -89,7 +87,7 @@ http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost
 // ************** cost of change ********
 == &nbsp;
 
-image:believe.png[]
+image:believe.png[width="95%",height="95%]
 
 // ************** cost of change ********
 == Hype all around!
@@ -120,7 +118,7 @@ image:believe.png[]
 
 Float right 
 
-image:integration.png[]
+image:integration.png[width="95%",height="95%]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -132,29 +130,29 @@ image:integration.png[]
 *JBoss Fuse for microservices ?*
 
 [#cover-logo]
-image::{revealjs_cover_image}[]
+image::{revealjs_cover_image}[width="95%",height="95%]
 
 // ************** jboss ********
 == &nbsp;
 
-image:jboss-fuse.png[]
+image:jboss-fuse.png[width="95%",height="95%]
 
 // ************** jboss ********
 == &nbsp;
 
-image:roi-fuse.png[]
+image:roi-fuse.png[width="95%",height="95%]
 
 // ************** jboss ********
 == &nbsp;
 
 Product Portfolio
-image:cat.png[]
+image:cat.png[width="95%",height="95%]
 
 // ************** fabric8 ************
 
 == &nbsp;
 
-image:fabric8.png[]
+image:fabric8.png[width="95%",height="95%]
 
 // ************** fabric8 ************
 
@@ -190,7 +188,7 @@ image:fabric8.png[]
 
 == Support Continuous Delivery Strategy
 
-image:cd_process_diagram.png[]
+image:cd_process_diagram.png[width="95%",height="95%]
 
 // ************** fabric v2 ************
 
@@ -208,7 +206,7 @@ image:cd_process_diagram.png[]
 
 == Docker
 
-image:docker-logo.png[]
+image:docker-logo.png[width="95%",height="95%]
 
 * *Container runtime* & *image* distribution
 
@@ -216,7 +214,7 @@ image:docker-logo.png[]
 
 == Container vs VM
 
-image:docker_vm_diagram.jpg[]
+image:docker_vm_diagram.jpg[width="95%",height="95%]
 
 // ************** fabric v2 ************
 
@@ -237,7 +235,7 @@ image:docker-filesystems-multilayer.png[width="60%,height="60%"]
 * *Agent - Kubelet* - manage containers on host
 * Containers {icon-arrow-right} *pods* (= shared docker containers)
 
-image:kubernetes.png[]
+image:kubernetes.png[width="95%",height="95%]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -249,7 +247,7 @@ image:kubernetes.png[]
 *Openshift*
 
 [#cover-logo]
-image::{revealjs_cover_image}[]
+image::{revealjs_cover_image}[width="95%",height="95%]
 
 // ************** openshift ************
 
@@ -262,13 +260,13 @@ image::{revealjs_cover_image}[]
 
 Bottom
 
-image:openshift_logo.png[]
+image:openshift_logo.png[width="95%",height="95%]
 
 // ************** openshift ************
 
 == Scale IT Like a Factory with PaaS
 
-image:openshift-paas.png[]
+image:openshift-paas.png[width="95%",height="95%]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -280,13 +278,13 @@ image:openshift-paas.png[]
 *Bringing this all together*
 
 [#cover-logo]
-image::{revealjs_cover_image}[]
+image::{revealjs_cover_image}[width="95%",height="95%]
 
 // ************** devops ************
 
 == &nbsp;
 
-image:worked-fine-in-dev.png[]
+image:worked-fine-in-dev.png[width="95%",height="95%]
 
 // ************** devops ************
 
@@ -302,7 +300,7 @@ image:worked-fine-in-dev.png[]
 
 Float right
 
-image:wtf-dev-ops.png[]
+image:wtf-dev-ops.png[width="95%",height="95%]
 
 // ************** devops ************
 
@@ -373,7 +371,7 @@ List of icons
 
 == Sample Flow
 
-image:cd-sample-flow.png[]
+image:cd-sample-flow.png[width="95%",height="95%]
 
 
 // ************** fabric v2 ************
@@ -389,7 +387,7 @@ image:openshift_logo.png[width="40%,height="40%"]
 
 == OS3 Architecture
 
-image:ose-v3.png[]
+image:ose-v3.png[width="95%",height="95%]
 
 // ************** fabric & hawtio ************
 == Fabric8 v2 in action
