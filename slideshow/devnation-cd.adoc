@@ -1,0 +1,443 @@
+:footer_copyright: Copyright ©2015 Red Hat, Inc.
+:imagesdir: images/
+:author: Christian Posta & Charles Moulliard
+:blog: http://cmoulliard.github.io
+:title-author: {author}
+:talk-title: Continuous Delivery with JBoss Fuse & Openshift
+:talk-date: DevNation - 22th of June - 2015
+:title-speaker: Pr. Solution Architect, Apache Committer
+:twitter: cmoulliard
+
+[#cover,data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[#cover-h1]
+*{talk-title}*
+
+[#cover-h2]
+{author} +
+{title-speaker} +
+{talk-date}
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** who - christian ********
+== Who
+
+Picture
+
+Right
+
+Principal Middleware Specialist/Architect
+Blog: http://christianposta.com/blog
+Twitter: @christianposta
+Email: christian@redhat.com
+
+Bottom
+
+Committer on Apache Camel, ActiveMQ, Fabric8, PMC on ActiveMQ
+Author: Essential Camel Components DZone Refcard
+Frequent blogger and speaker about open-source technology!
+
+// ************** who - charles ********
+== Who
+
+
+// ************** Projects timeline ********
+== Agenda
+
+* The cost of change
+* JBoss Fuse integration platform
+* OpenShift PaaS
+* CI/CD
+* Demo
+
+// ************** cost of change ********
+== &nbsp;
+
+image:cat.png[]
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline]
+
+[#cover-h2]
+*Cost of change*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** cost of change ********
+== Cost of change
+
+* Development
+* Operational
+* Infrastructure
+* Business requirements
+
+Float right
+
+image:change.png[]
+
+Bottom
+
+http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost-of-change/
+
+// ************** cost of change ********
+== &nbsp;
+
+image:believe.png[]
+
+// ************** cost of change ********
+== Hype all around!
+
+* Microservices
+* DevOps philosophies
+* Cloud (IaaS, PaaS/iPaaS/mBaaS)
+
+// ************** cost of change ********
+== Integration costs
+
+* Integration is Hard!
+* Different system vintages
+* Mainframe, EAI Hub, MOM, EJB, Web Services
+* Evolving business processes
+* Systems must work together
+* File exchange, Shared Database, Remote Procedure Call (RPC), Messaging
+
+// ************** cost of change ********
+== Integration costs
+
+* Platforms  
+* Protocols
+* Data Formats
+* Timing
+* Organizational mismatch
+* Communication
+
+Float right 
+
+image:integration.png[]
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline]
+
+[#cover-h2]
+*JBoss Fuse for microservices ?*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** jboss ********
+== &nbsp;
+
+image:jboss-fuse.png[]
+
+// ************** jboss ********
+== &nbsp;
+
+image:roi-fuse.png[]
+
+// ************** jboss ********
+== &nbsp;
+
+Product Portfolio
+image:cat.png[]
+
+// ************** fabric8 ************
+
+== &nbsp;
+
+image:fabric8.png[]
+
+// ************** fabric8 ************
+
+== http://fabric8.io
+
+* Simplifies deployments
+* Provides centralized configuration
+* Versioning
+* Visualization of your middleware
+* Service discovery
+* Smart load balancing
+* Failover
+* Provides cluster capabilities, coordination
+
+
+// ************** fabric v2 ************
+
+== Fabric8 v2
+
+[.newline]
+* Extend GOALS of FabricV1
+
+[.newline]
+* Provision *Other Java Containers* : JBoss EAP, Tomcat, ...
+
+[.newline]
+* Rely on a *New API* & *Architecture Design*
+
+[.newline]
+* Decouple Devs & Ops
+
+// ************** fabric v2 ************
+
+== Support Continuous Delivery Strategy
+
+image:cd_process_diagram.png[]
+
+// ************** fabric v2 ************
+
+== More Maven plugins
+
+* docker:build, docker:push
+
+[.newline]
+* fabric8:json, fabric8:create-env, fabric8:publish
+
+[.newline]
+* fabric8:create-routes, fabric8:delete-pods
+
+// ************** fabric v2 ************
+
+== Docker
+
+image:docker-logo.png[]
+
+* *Container runtime* & *image* distribution
+
+// ************** fabric v2 ************
+
+== Container vs VM
+
+image:docker_vm_diagram.jpg[]
+
+// ************** fabric v2 ************
+
+== Docker
+
+image:docker-filesystems-multilayer.png[width="60%,height="60%"]
+
+* *Launch Process* (cmd/entrypoint)
+* Top of a Union FS mounted with immutable images
+* Benefits: *portability*, *reusability*, versioning, application-centric
+
+// ************** fabric v2 ************
+
+== Kubernetes
+
+* Runtime & *Operational management* of containers
+* ApiServer (event, status), *Scheduler*, *Controller* & State Storage
+* *Agent - Kubelet* - manage containers on host
+* Containers {icon-arrow-right} *pods* (= shared docker containers)
+
+image:kubernetes.png[]
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline]
+
+[#cover-h2]
+*Openshift*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** openshift ************
+
+== Platform as a Service
+
+* Flexible technology options
+* Developer self service
+* Automation, DevOps philosophy
+* Decoupling between operations and developers, reduces coordination
+
+Bottom
+
+image:openshift_logo.png[]
+
+// ************** openshift ************
+
+== Scale IT Like a Factory with PaaS
+
+image:openshift-paas.png[]
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline]
+
+[#cover-h2]
+*Bringing this all together*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** devops ************
+
+== &nbsp;
+
+image:worked-fine-in-dev.png[]
+
+// ************** devops ************
+
+== “WTF is DevOps?”
+
+* IT is a core competency
+* Set of principles
+* There’s more to applications than coding!
+* Feedback
+* Repetition
+* Communication
+* People!
+
+Float right
+
+image:wtf-dev-ops.png[]
+
+// ************** devops ************
+
+== Continuous Delivery
+
+* Builds on continuous integration
+* Establish a concrete pipeline to production
+* Build/Test/Release often!
+* Bottlenecks?
+* Involves Dev and Ops to be successful
+* Every build is a “release candidate”
+  
+// ************** devops ************
+
+== Automate everything!
+
+* Developers
+** Unit tests
+** Integration tests
+** Builds
+** Deployments in dev
+
+* Operations
+** VMs
+** Provisioning software
+** Deployments in QA/UAT/PROD
+
+
+// ************** devops ************
+
+== Tools for a CD pipeline
+
+* Puppet/Chef to provision VMs
+* Git for SCM
+* Gerrit/Gitlab for code reviews
+* Maven
+* Jenkins + plugins
+* and of course… Fabric8!
+
+Bottom
+
+List of icons
+
+// ************** devops ************
+
+== Fabric8 maven plugin
+
+* fabric8:deploy
+* fabric8:zip
+* fabric8:aggregate-zip
+* fabric8:branch
+* fabric8:script (for karaf only)
+* http://fabric8.io/gitbook/mavenPlugin.html
+
+// ************** devops ************
+
+== Sample Flow
+
+* Check your code in
+* Gerrit for code reviews
+* Jenkins for build + CD pipeline
+* Use fabric8:zip to deploy profiles to Maven repo
+* Use fabric8:branch to automate deploying multiple profiles to QA/UAT/PROD
+* Can use profile-import to manually import zips
+* Build the binary once!
+
+// ************** devops ************
+
+== Sample Flow
+
+image:cd-sample-flow.png[]
+
+
+// ************** fabric v2 ************
+
+== Openshift v3
+
+image:openshift_logo.png[width="40%,height="40%"]
+
+* *Designed* around Kubernetes, Docker & Fabric8
+* Provide additional features : build (STI), deploy, manage & promote
+
+// ************** fabric v2 ************
+
+== OS3 Architecture
+
+image:ose-v3.png[]
+
+// ************** fabric & hawtio ************
+== Fabric8 v2 in action
+
+[.newline]
+* *DEMO* :
+** Move to Fabric8 v2
+** Start VM Machine running Openshiftv3 & Docker
+** Install a Camel Servlet WAR project as a Kube Application
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline] 
+
+[#cover-h2]
+*Demo ...*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== &nbsp;
+
+[.newline]
+
+[#cover-h2]
+*Bringing this all together*
+
+[#cover-logo]
+image::{revealjs_cover_image}[]
+
+// *********************************
+== Questions
+
+[.noredheader,cols="65,.<45"]
+|===
+
+.2+|image:questions.png[width="95%",height="95%"]
+a|* Twitter : @cmoulliard, @christianposta
+|===
+
+* More info {icon-arrow-right}
+  - www.jboss.org/products/fuse.html
+  - http://www.redhat.com/en/technologies/jboss-middleware
+
+
+
+
