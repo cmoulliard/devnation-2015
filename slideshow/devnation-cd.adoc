@@ -25,14 +25,14 @@ image::{revealjs_cover_image}[]
 // ************** who - christian ********
 == Who
 
-image:christian-posta.png[]
-
-Principal Middleware Specialist/Architect
+[.noredheader,cols="40,60"]
+|===
+| .2+| image:christian-posta.png[width="85%"]
+a| Principal Middleware Specialist/Architect
 Blog: http://christianposta.com/blog
 Twitter: @christianposta
 Email: christian@redhat.com
-
-Bottom
+|===
 
 Committer on Apache Camel, ActiveMQ, Fabric8, PMC on ActiveMQ
 Author: Essential Camel Components DZone Refcard
