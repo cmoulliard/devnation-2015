@@ -25,17 +25,23 @@ image::{revealjs_cover_image}[]
 // ************** who - christian ********
 == Who
 
-[.noredheader,cols="40,60"]
+[.noredheader,cols="30,70"]
 |===
-| .2+| image:christian-posta.png[width="85%"]
-a| Principal Middleware Specialist/Architect
+| image:christian-posta.png[width="75%"]
+| Principal Middleware Specialist/Architect
+
 Blog: http://christianposta.com/blog
+
 Twitter: @christianposta
-Email: christian@redhat.com
+
+Email: christian@redhat.com |
 |===
 
+[.newline]
 Committer on Apache Camel, ActiveMQ, Fabric8, PMC on ActiveMQ
+
 Author: Essential Camel Components DZone Refcard
+
 Frequent blogger and speaker about open-source technology!
 
 // ************** who - charles ********
@@ -54,6 +60,7 @@ Frequent blogger and speaker about open-source technology!
 // ************** cost of change ********
 == &nbsp;
 
+[style="top=10px"]
 image:cat.png[width="95%",height="95%]
 
 // ************** page ************
@@ -69,18 +76,12 @@ image:cat.png[width="95%",height="95%]
 image::{revealjs_cover_image}[width="95%",height="95%]
 
 // ************** cost of change ********
-== Cost of change
+== Cost of change image:change.png[width="25%",height="25%",float="right"]
 
 * Development
 * Operational
 * Infrastructure
 * Business requirements
-
-Float right
-
-image:change.png[width="95%",height="95%]
-
-Bottom
 
 http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost-of-change/
 
