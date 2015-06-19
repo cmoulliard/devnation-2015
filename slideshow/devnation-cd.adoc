@@ -4,7 +4,7 @@
 :blog: http://cmoulliard.github.io
 :title-author: {author}
 :talk-title: Continuous Delivery with JBoss Fuse & Openshift
-:talk-date: DevNation - 22th of June - 2015
+:talk-date: DevNation - 23th of June 2015
 :title-speaker: Pr. Solution Architect, Apache Committer
 :twitter: cmoulliard
 
@@ -19,7 +19,6 @@ image::{revealjs_cover_image}[]
 
 [#cover-h2,width="800px",left="0px",top="450px"]
 {author} +
-{title-speaker} +
 {talk-date}
 
 // ************** who - christian ********
@@ -67,6 +66,8 @@ Email: cmoulliard@redhat.com |
 == Agenda
 
 * The cost of change
+* Microservices
+* Fabric8
 * OpenShift PaaS
 * CI/CD
 * Demo
@@ -125,7 +126,7 @@ image:believe.png[width="85%",height="85%"]
 
 [.noredheader,cols="60,40"]
 |===
- a|
+a|
 * Platforms  
 * Protocols
 * Data Formats
@@ -141,26 +142,8 @@ image:believe.png[width="85%",height="85%"]
 [#block,width="200px",left="70px",top="0px"]
 image::{revealjs_cover_image}[]
 
-[#cover-h1,width="600px",left="0px",top="400px"]
-*JBoss Fuse for microservices ?*
-
-// ************** jboss ********
-== {blank-space}
-
-image::jboss-fuse.png[width="95%",height="100%"]
-
-// ************** jboss ********
-== {blank-space}
-
-image::roi-fuse.png[width="95%",height="100%"]
-
-image::bvh.png[width="95%",height="100%"]
-
-// ************** jboss ********
-== {blank-space}
-
-Product Portfolio
-image:xxx.png[width="95%",height="95%"]
+[#block,left="0px",top="400px"]
+*Technology for Microservices ?*
 
 // ************** fabric8 ************
 
@@ -171,17 +154,44 @@ image:fabric8.png[width="95%",height="95%"]
 
 // ************** fabric8 ************
 
-== http://fabric8.io
+== Fabric8 v1
 
-* Simplifies deployments
+[.noredheader,cols="45,55"]
+|===
+a| * http://fabric8.io[OpenSource Project]
 * Provides centralized configuration
-* Versioning
-* Visualization of your middleware
-* Service discovery
-* Smart load balancing
-* Failover
+* Versioning (upgrade/rollback)
+* Visualization of your middleware |
+|===
+
+[#block,width="100px",top="100px",left="500px"]
+image:fabric-diagram.png[width="85%"]
+
+// ************** fabric8 ************
+
+== Fabric8 v1
+
+* Simplification (deployment & container provisioning)
+
+[#block,width="100px",top="150px",left="0px"]
+image:fabric-diagram1.png[width="95%"]
+
+// ************** fabric8 ************
+
+== Zookeeper & Agent
+
+image::fabric-1.png[width="40%"]
+
+image::fabric-2.png[width="40%"]
+
+// ************** fabric8 ************
+
+== Fabric8 v1
+
+* *Service discovery* & smart *load balancing*
 * Provides cluster capabilities, coordination
 
+image::fabric-camel.png[width="75%"]
 
 // ************** fabric v2 ************
 
@@ -201,50 +211,38 @@ image:fabric8.png[width="95%",height="95%"]
 
 // ************** fabric v2 ************
 
-== Support Continuous Delivery Strategy
+== Support Continuous Delivery
 
-[#block,width="800px",top="0px"]
+[#block,width="800px",top="70px"]
 image:cd_process_diagram.png[width="95%",height="95%"]
 
-// ************** fabric v2 ************
+// ************** docker ************
 
-== More Maven plugins
+== Process vs OS
 
-* docker:build, docker:push
+[#block,width="800px",top="100px"]
+image:docker_vm_diagram.jpg[width="95%",height="95%"]
 
-[.newline]
-* fabric8:json, fabric8:create-env, fabric8:publish
-
-[.newline]
-* fabric8:create-routes, fabric8:delete-pods
-
-// ************** fabric v2 ************
+// ************** docker ************
 
 == Docker
 
-[#block,width="800px",top="0px"]
+[#block,width="800px",top="150px"]
 image:docker-logo.png[width="55%",height="55%"]
 
 * *Container runtime* & *image* distribution
+* *Launch Process* (cmd/entrypoint)
 
-// ************** fabric v2 ************
-
-== Container vs VM
-
-[#block,width="800px",top="0px"]
-image:docker_vm_diagram.jpg[width="95%",height="95%"]
-
-// ************** fabric v2 ************
+// ************** docker ************
 
 == Docker
 
 image::docker-filesystems-multilayer.png[width="60%,height="60%"]
 
-* *Launch Process* (cmd/entrypoint)
 * Top of a Union FS mounted with immutable images
 * Benefits: *portability*, *reusability*, versioning, application-centric
 
-// ************** fabric v2 ************
+// ************** kubernetes ************
 
 == Kubernetes
 
@@ -253,7 +251,7 @@ image::docker-filesystems-multilayer.png[width="60%,height="60%"]
 * *Agent - Kubelet* - manage containers on host
 * Containers {icon-arrow-right} *pods* (= shared docker containers)
 
-image::kubernetes.png[width="95%",height="95%"]
+image::kubernetes-logo.png[width="25%",height="25%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -263,7 +261,7 @@ image::kubernetes.png[width="95%",height="95%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,width="600px",left="0px",top="400px"]
-*Openshift*
+*Bringing this all together*
 
 // ************** openshift ************
 
@@ -278,9 +276,25 @@ image::openshift_logo.png[width="35%"]
 
 // ************** openshift ************
 
+== Openshift v3
+
+* *Designed* around Kubernetes, Docker & Fabric8
+* Provide additional features : build (STI), deploy, manage & promote
+
+image::openshift_logo.png[width="30%,height="30%"]
+
+// ************** openshift ************
+
+== OS3 Architecture
+
+[#block,width="800px",top="120px"]
+image:ose-v3.png[width="95%",height="95%"]
+
+// ************** openshift ************
+
 == Scale IT Like a Factory with PaaS
 
-[#block,width="800px",top="0px"]
+[#block,width="800px",top="100px"]
 image:openshift-paas.png[width="75%"]
 
 // ************** page ************
@@ -291,9 +305,9 @@ image:openshift-paas.png[width="75%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,width="600px",left="0px",top="400px"]
-*Bringing this all together*
+*Dev Ops*
 
-// ************** devops ************
+// ************** devops ***********
 
 == {blank-space}
 
@@ -352,19 +366,24 @@ image:worked-fine-in-dev.png[width="80%"]
 * Jenkins + plugins
 * and of course… Fabric8!
 
-Bottom
-
-List of icons
-
 // ************** devops ************
 
-== Fabric8 maven plugin
+// ************** fabric v2 ************
 
-* fabric8:deploy
-* fabric8:zip
-* fabric8:aggregate-zip
-* fabric8:branch
-* fabric8:script (for karaf only)
+== Fabric8 (new)
+
+* docker:build
+* docker:push
+
+[.newline]
+* fabric8:json
+* fabric8:create-env
+* fabric8:publish
+
+[.newline]
+* fabric8:create-routes
+* fabric8:delete-pods
+
 * http://fabric8.io/gitbook/mavenPlugin.html
 
 // ************** devops ************
@@ -383,33 +402,8 @@ List of icons
 
 == Sample Flow
 
-[#block,width="800px",top="0px"]
+[#block,width="800px",top="100px"]
 image:cd-sample-flow.png[width="95%",height="95%"]
-
-// ************** fabric v2 ************
-
-== Openshift v3
-
-image::openshift_logo.png[width="40%,height="40%"]
-
-* *Designed* around Kubernetes, Docker & Fabric8
-* Provide additional features : build (STI), deploy, manage & promote
-
-// ************** fabric v2 ************
-
-== OS3 Architecture
-
-[#block,width="800px",top="0px"]
-image:ose-v3.png[width="95%",height="95%"]
-
-// ************** fabric & hawtio ************
-== Fabric8 v2 in action
-
-[.newline]
-* *DEMO* :
-** Move to Fabric8 v2
-** Start VM Machine running Openshiftv3 & Docker
-** Install a Camel Servlet WAR project as a Kube Application
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -420,16 +414,6 @@ image::{revealjs_cover_image}[]
 
 [#cover-h1,width="600px",left="0px",top="400px"]
 *Demo ...*
-
-// ************** page ************
-[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
-== {blank-space}
-
-[#block,width="200px",left="70px",top="0px"]
-image::{revealjs_cover_image}[]
-
-[#cover-h1,width="600px",left="0px",top="400px"]
-*Bringing this all together*
 
 // *********************************
 == Questions
