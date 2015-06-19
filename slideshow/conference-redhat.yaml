@@ -51,7 +51,7 @@ attributes:
   iconfont-name: font-awesome-4.3.0
 
   revealjsdir: "revealjs-redhat"
-  revealjs_theme: gpe # conference-redhat # GPE Reveal css theme
+  revealjs_theme: conference # Revealjs RedHat css theme
   revealjs_transition: none # default/cube/page/concave/zoom/linear/fade/none
   revealjs_display_slidenumber: true  # Comment/Uncomment the line but don't replace true by false
   revealjs_history: true # Comment/Uncomment the line but don't replace true by false
