@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-tar -zcvf ~/Temp/devnation-presentation.tar.gz slideshow/generated
+tar -zxvf ~/Temp/devnation-presentation.tar.gz slideshow/generated
