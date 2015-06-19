@@ -11,16 +11,16 @@
 [#cover,data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[#cover-h1]
-*{talk-title}*
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
 
-[#cover-h2]
+[#cover-h1,width="600px",left="0px",top="200px"]
+{talk-title}
+
+[#cover-h2,width="800px",left="0px",top="450px"]
 {author} +
 {title-speaker} +
 {talk-date}
-
-[#cover-logo]
-image::{revealjs_cover_image}[]
 
 // ************** who - christian ********
 == Who
@@ -38,19 +38,19 @@ Email: christian@redhat.com |
 |===
 
 [.newline]
-Committer on Apache Camel, ActiveMQ, Fabric8, PMC on ActiveMQ
+* Committer on Apache Camel, ActiveMQ, Fabric8, PMC on ActiveMQ
 
-Author: Essential Camel Components DZone Refcard
+* Author: Essential Camel Components DZone Refcard
 
-Frequent blogger and speaker about open-source technology!
+* Frequent blogger and speaker about open-source technology!
 
 // ************** who - charles ********
 == Who
 
 [.noredheader,cols="30,70"]
 |===
-| image:christian-posta.png[width="75%"]
-| Principal solution Architect/Apache Committer
+| image:cmoulliard.png[width="90%",height="100%"]
+| Principal Solution Architect
 
 Blog: http://cmoulliard.github.io
 
@@ -58,6 +58,10 @@ Twitter: @cmoulliard
 
 Email: cmoulliard@redhat.com |
 |===
+
+* Committer on Apache Camel, Karaf, Fabric8, Hawtio ... & PMC
+* Technology evangelist
+* Mountain Biker, blogger
 
 // ************** Projects timeline ********
 == Agenda
@@ -77,13 +81,11 @@ image:cat.png[width="95%"]
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline]
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
 
-[#cover-h2]
+[#cover-h1,width="600px",left="0px",top="400px"]
 *Cost of change*
-
-[#cover-logo]
-image::{revealjs_cover_image}[width="95%",height="95%"]
 
 // ************** cost of change ********
 == Cost of change image:change.png[width="25%",height="25%",float="right"]
@@ -98,7 +100,8 @@ http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost
 // ************** cost of change ********
 == {blank-space}
 
-image::believe.png[width="85%",height="85%"]
+[#block,width="800px",top="0px"]
+image:believe.png[width="85%",height="85%"]
 
 // ************** cost of change ********
 == Hype all around!
@@ -135,13 +138,11 @@ image::believe.png[width="85%",height="85%"]
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline]
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
 
-[#cover-h2]
+[#cover-h1,width="600px",left="0px",top="400px"]
 *JBoss Fuse for microservices ?*
-
-[#cover-logo]
-image::{revealjs_cover_image}[width="95%",height="95%"]
 
 // ************** jboss ********
 == {blank-space}
@@ -159,13 +160,14 @@ image::bvh.png[width="95%",height="100%"]
 == {blank-space}
 
 Product Portfolio
-image::xxx.png[width="95%",height="95%"]
+image:xxx.png[width="95%",height="95%"]
 
 // ************** fabric8 ************
 
 == {blank-space}
 
-image::fabric8.png[width="95%",height="95%"]
+[#block,width="800px",top="0px"]
+image:fabric8.png[width="95%",height="95%"]
 
 // ************** fabric8 ************
 
@@ -201,7 +203,8 @@ image::fabric8.png[width="95%",height="95%"]
 
 == Support Continuous Delivery Strategy
 
-image::cd_process_diagram.png[width="95%",height="95%"]
+[#block,width="800px",top="0px"]
+image:cd_process_diagram.png[width="95%",height="95%"]
 
 // ************** fabric v2 ************
 
@@ -219,7 +222,8 @@ image::cd_process_diagram.png[width="95%",height="95%"]
 
 == Docker
 
-image::docker-logo.png[width="55%",height="55%"]
+[#block,width="800px",top="0px"]
+image:docker-logo.png[width="55%",height="55%"]
 
 * *Container runtime* & *image* distribution
 
@@ -227,7 +231,8 @@ image::docker-logo.png[width="55%",height="55%"]
 
 == Container vs VM
 
-image::docker_vm_diagram.jpg[width="95%",height="95%"]
+[#block,width="800px",top="0px"]
+image:docker_vm_diagram.jpg[width="95%",height="95%"]
 
 // ************** fabric v2 ************
 
@@ -254,13 +259,11 @@ image::kubernetes.png[width="95%",height="95%"]
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline]
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
 
-[#cover-h2]
+[#cover-h1,width="600px",left="0px",top="400px"]
 *Openshift*
-
-[#cover-logo]
-image::{revealjs_cover_image}[width="95%",height="95%"]
 
 // ************** openshift ************
 
@@ -277,25 +280,25 @@ image::openshift_logo.png[width="35%"]
 
 == Scale IT Like a Factory with PaaS
 
-image::openshift-paas.png[width="75%"]
+[#block,width="800px",top="0px"]
+image:openshift-paas.png[width="75%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline]
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
 
-[#cover-h2]
+[#cover-h1,width="600px",left="0px",top="400px"]
 *Bringing this all together*
-
-[#cover-logo]
-image::{revealjs_cover_image}[width="95%",height="95%"]
 
 // ************** devops ************
 
 == {blank-space}
 
-image::worked-fine-in-dev.png[width="80%"]
+[#block,width="800px",top="0px"]
+image:worked-fine-in-dev.png[width="80%"]
 
 // ************** devops ************
 
@@ -380,8 +383,8 @@ List of icons
 
 == Sample Flow
 
-image::cd-sample-flow.png[width="95%",height="95%"]
-
+[#block,width="800px",top="0px"]
+image:cd-sample-flow.png[width="95%",height="95%"]
 
 // ************** fabric v2 ************
 
@@ -396,7 +399,8 @@ image::openshift_logo.png[width="40%,height="40%"]
 
 == OS3 Architecture
 
-image::ose-v3.png[width="95%",height="95%"]
+[#block,width="800px",top="0px"]
+image:ose-v3.png[width="95%",height="95%"]
 
 // ************** fabric & hawtio ************
 == Fabric8 v2 in action
@@ -411,25 +415,21 @@ image::ose-v3.png[width="95%",height="95%"]
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline] 
-
-[#cover-h2]
-*Demo ...*
-
-[#cover-logo]
+[#block,width="200px",left="70px",top="0px"]
 image::{revealjs_cover_image}[]
+
+[#cover-h1,width="600px",left="0px",top="400px"]
+*Demo ...*
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
 
-[.newline]
-
-[#cover-h2]
-*Bringing this all together*
-
-[#cover-logo]
+[#block,width="200px",left="70px",top="0px"]
 image::{revealjs_cover_image}[]
+
+[#cover-h1,width="600px",left="0px",top="400px"]
+*Bringing this all together*
 
 // *********************************
 == Questions
