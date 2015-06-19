@@ -4,7 +4,7 @@
 :blog: http://cmoulliard.github.io
 :title-author: {author}
 :talk-title: Continuous Delivery with JBoss Fuse & Openshift
-:talk-date: DevNation - 23th of June 2015
+:talk-date: DevNation - 23th of June 2015 - v1.0
 :title-speaker: Pr. Solution Architect, Apache Committer
 :twitter: cmoulliard
 
