@@ -4,7 +4,7 @@
 :blog: http://cmoulliard.github.io
 :title-author: {author}
 :talk-title: Continuous Delivery with JBoss Fuse & Openshift
-:talk-date: DevNation - 23th of June 2015 - v1.0
+:talk-date: DevNation - 23th of June 2015 - v1.1
 :title-speaker: Pr. Solution Architect, Apache Committer
 :twitter: cmoulliard
 
@@ -60,16 +60,16 @@ Email: cmoulliard@redhat.com |
 
 * Committer on Apache Camel, Karaf, Fabric8, Hawtio ... & PMC
 * Technology evangelist
-* Mountain Biker, blogger
+* Mountain Biker, Belgian Beer Fan, Blogger
 
 // ************** Projects timeline ********
 == Agenda
 
 * The cost of change
-* Microservices
-* Fabric8
-* OpenShift PaaS
 * CI/CD
+* Tooling
+* OpenShift PaaS
+* Fabric8
 * Demo
 
 // ************** cost of change ********
@@ -105,13 +105,6 @@ http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost
 image:believe.png[width="85%",height="85%"]
 
 // ************** cost of change ********
-== Hype all around!
-
-* Microservices
-* DevOps philosophies
-* Cloud (IaaS, PaaS/iPaaS/mBaaS)
-
-// ************** cost of change ********
 == Integration costs
 
 * Integration is Hard!
@@ -143,7 +136,77 @@ a|
 image::{revealjs_cover_image}[]
 
 [#cover-h1,left="0px",top="350px",width="2000px"]
-*Technology for Microservice*
+*Continuous Delivery/Integration*
+
+// ************** devops ***********
+
+== {blank-space}
+
+[#block,width="800px",top="0px"]
+image:worked-fine-in-dev.png[width="80%"]
+
+// ************** devops ************
+
+== “WTF is DevOps?”
+
+[.noredheader]
+|===
+ a| * IT is a core competency
+* Set of principles
+* There’s more to applications than coding!
+* Feedback
+* Repetition
+* Communication
+* People! | image:wtf-dev-ops.png[width="95%"]
+|===
+
+// ************** devops ************
+
+== Continuous Delivery
+
+* Builds on continuous integration
+* Establish a concrete pipeline to production
+* Build/Test/Release often!
+* Bottlenecks?
+* Involves Dev and Ops to be successful
+* Every build is a “release candidate”
+
+// ************** devops ************
+
+== Automate everything!
+
+* Developers
+** Unit tests
+** Integration tests
+** Builds
+** Deployments in dev
+
+* Operations
+** VMs
+** Provisioning software
+** Deployments in QA/UAT/PROD
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== {blank-space}
+
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
+
+[#cover-h1,left="0px",top="350px",width="2000px"]
+*Tooling, tooling, ...*
+
+// ************** devops ************
+
+== Tools for a CD pipeline
+
+* Puppet/Chef to provision VMs
+* Git for SCM
+* Gerrit/Gitlab for code reviews
+* Maven
+* Jenkins + plugins
+* and of course… Fabric8!
+
 
 // ************** fabric8 ************
 
@@ -154,60 +217,10 @@ image:fabric8.png[width="95%",height="95%"]
 
 // ************** fabric8 ************
 
-== Fabric8 v1
+== {blank-space}
 
-[.noredheader,cols="45,55"]
-|===
-a| * http://fabric8.io[OpenSource Project]
-* Provides centralized configuration
-* Versioning (upgrade/rollback)
-* Visualization of your middleware |
-|===
-
-[#block,width="100px",top="100px",left="500px"]
-image:fabric-diagram.png[width="85%"]
-
-// ************** fabric8 ************
-
-== Fabric8 v1
-
-* Simplification (deployment & container provisioning)
-
-[#block,width="100px",top="150px",left="0px"]
-image:fabric-diagram1.png[width="95%"]
-
-// ************** fabric8 ************
-
-== Zookeeper & Agent
-
-image::fabric-1.png[width="40%"]
-
-image::fabric-2.png[width="40%"]
-
-// ************** fabric8 ************
-
-== Fabric8 v1
-
-* *Service discovery* & smart *load balancing*
-* Provides cluster capabilities, coordination
-
-image::fabric-camel.png[width="75%"]
-
-// ************** fabric v2 ************
-
-== Fabric8 v2
-
-[.newline]
-* Extend GOALS of FabricV1
-
-[.newline]
-* Provision *Other Java Containers* : JBoss EAP, Tomcat, ...
-
-[.newline]
-* Rely on a *New API* & *Architecture Design*
-
-[.newline]
-* Decouple Devs & Ops
+[#block,width="800px",top="0px"]
+image:fabric8-v2.png[width="95%",height="95%"]
 
 // ************** fabric v2 ************
 
@@ -297,80 +310,9 @@ image:ose-v3.png[width="95%",height="95%"]
 [#block,width="800px",top="100px"]
 image:openshift-paas.png[width="75%"]
 
-// ************** page ************
-[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
-== {blank-space}
-
-[#block,width="200px",left="70px",top="0px"]
-image::{revealjs_cover_image}[]
-
-[#cover-h1,width="600px",left="0px",top="400px"]
-*Dev Ops*
-
-// ************** devops ***********
-
-== {blank-space}
-
-[#block,width="800px",top="0px"]
-image:worked-fine-in-dev.png[width="80%"]
-
-// ************** devops ************
-
-== “WTF is DevOps?”
-
-[.noredheader]
-|===
- a| * IT is a core competency
-* Set of principles
-* There’s more to applications than coding!
-* Feedback
-* Repetition
-* Communication
-* People! | image:wtf-dev-ops.png[width="95%"]
-|===
-
-// ************** devops ************
-
-== Continuous Delivery
-
-* Builds on continuous integration
-* Establish a concrete pipeline to production
-* Build/Test/Release often!
-* Bottlenecks?
-* Involves Dev and Ops to be successful
-* Every build is a “release candidate”
-  
-// ************** devops ************
-
-== Automate everything!
-
-* Developers
-** Unit tests
-** Integration tests
-** Builds
-** Deployments in dev
-
-* Operations
-** VMs
-** Provisioning software
-** Deployments in QA/UAT/PROD
-
-// ************** devops ************
-
-== Tools for a CD pipeline
-
-* Puppet/Chef to provision VMs
-* Git for SCM
-* Gerrit/Gitlab for code reviews
-* Maven
-* Jenkins + plugins
-* and of course… Fabric8!
-
-// ************** devops ************
-
 // ************** fabric v2 ************
 
-== Fabric8 (new)
+== Fabric8 Plugin
 
 * docker:build
 * docker:push

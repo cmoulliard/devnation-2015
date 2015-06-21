@@ -1,0 +1,56 @@
+// ************** fabric8 ************
+
+== Fabric8 v1
+
+[.noredheader,cols="45,55"]
+|===
+a| * http://fabric8.io[OpenSource Project]
+* Provides centralized configuration
+* Versioning (upgrade/rollback)
+* Visualization of your middleware |
+|===
+
+[#block,width="100px",top="100px",left="500px"]
+image:fabric-diagram.png[width="85%"]
+
+// ************** fabric8 ************
+
+== Fabric8 v1
+
+* Simplification (deployment & container provisioning)
+
+[#block,width="100px",top="150px",left="0px"]
+image:fabric-diagram1.png[width="95%"]
+
+// ************** fabric8 ************
+
+== Zookeeper & Agent
+
+image::fabric-1.png[width="40%"]
+
+image::fabric-2.png[width="40%"]
+
+// ************** fabric8 ************
+
+== Fabric8 v1
+
+* *Service discovery* & smart *load balancing*
+* Provides cluster capabilities, coordination
+
+image::fabric-camel.png[width="75%"]
+
+// ************** fabric v2 ************
+
+== Fabric8 v2
+
+[.newline]
+* Extend GOALS of FabricV1
+
+[.newline]
+* Provision *Other Java Containers* : JBoss EAP, Tomcat, ...
+
+[.newline]
+* Rely on a *New API* & *Architecture Design*
+
+[.newline]
+* Decouple Devs & Ops

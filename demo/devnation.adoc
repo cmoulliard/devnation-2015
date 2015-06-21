@@ -10,10 +10,13 @@
 ```
 * Open a Terminal and move to the directory of Fabric8 project (use master branch)
 * Start Vagrant
+
 ```
     vagrant up
 ```
+
 * Define for the HOST macosx the docker daemon which runs within the Vagrant VM Box and kubernetes env vars
+
 ```
     unset DOCKER_CERT_PATH
     unset DOCKER_TLS_VERIFY
