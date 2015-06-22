@@ -49,7 +49,7 @@ Email: christian@redhat.com |
 [.noredheader,cols="30,70"]
 |===
 | image:cmoulliard.png[width="90%",height="100%"]
-| Principal Solution Architect
+| Principal Solution Architect & Fuse Expert
 
 Blog: http://cmoulliard.github.io
 
@@ -68,8 +68,8 @@ Email: cmoulliard@redhat.com |
 * The cost of change
 * CI/CD
 * Tooling
-* OpenShift PaaS
 * Fabric8
+* OpenShift
 * Demo
 
 // ************** cost of change ********
@@ -89,14 +89,17 @@ image::{revealjs_cover_image}[]
 *Cost of change*
 
 // ************** cost of change ********
-== Cost of change image:change.png[width="25%",height="25%",float="right"]
+== Cost of change
 
-* Development
-* Operational
-* Infrastructure
-* Business requirements
+[.noredheader]
+|===
+a| * **D**evelopment
+* **O**perational
+* **I**nfrastructure
+* **B**usiness requirements | image:change.png[width="35%",height="35%",float="right"]
+|===
 
-http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost-of-change/
+* http://blog.christianposta.com/microservices/microservices-and-reducing-the-cost-of-change/[Microservices {icon-arrow-right} reducing the Cost of Change]
 
 // ************** cost of change ********
 == {blank-space}
@@ -107,12 +110,14 @@ image:believe.png[width="85%",height="85%"]
 // ************** cost of change ********
 == Integration costs
 
-* Integration is Hard!
-* Different system vintages
+[.noredheader,cols="60,40"]
+|===
+a|* *Integration* is *Hard!*
+* *Different* system *vintages*
 * Mainframe, EAI Hub, MOM, EJB, Web Services
-* Evolving business processes
-* Systems must work together
-* File exchange, Shared Database, Remote Procedure Call (RPC), Messaging
+* *Evolving* business processes
+* *Systems* must *collaborate* | image:esb.png[width="75%"]
+|===
 
 // ************** cost of change ********
 == Integration costs 
@@ -120,13 +125,13 @@ image:believe.png[width="85%",height="85%"]
 [.noredheader,cols="60,40"]
 |===
 a|
-* Platforms  
-* Protocols
-* Data Formats
-* Timing
-* Organizational mismatch
-* Communication | image:integration.png[width="65%"]
+* Platforms, *Protocols*
+* *Data Formats*
+* Organizational *mismatch*
+* *Timing*, **Com**munication | image:integration-1.png[width="90%"]
 |===
+
+image::integration-2.png[width="65%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -151,12 +156,11 @@ image:worked-fine-in-dev.png[width="80%"]
 
 [.noredheader]
 |===
- a| * IT is a core competency
-* Set of principles
+ a| * *IT* is a *core* competency
+* *Set* of *principles*
 * There’s more to applications than coding!
-* Feedback
-* Repetition
-* Communication
+* Feedback, *Repetition*
+* *Communication*
 * People! | image:wtf-dev-ops.png[width="95%"]
 |===
 
@@ -164,12 +168,12 @@ image:worked-fine-in-dev.png[width="80%"]
 
 == Continuous Delivery
 
-* Builds on continuous integration
-* Establish a concrete pipeline to production
+* *Objective* {icon-arrow-right} *Continuous Integration* strategy
+* Establish a concrete *pipeline to production*
 * Build/Test/Release often!
 * Bottlenecks?
-* Involves Dev and Ops to be successful
-* Every build is a “release candidate”
+* *Involves Dev and Ops* to be successful
+* Every *build* is a “release candidate”
 
 // ************** devops ************
 
@@ -194,19 +198,34 @@ image:worked-fine-in-dev.png[width="80%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,left="0px",top="350px",width="2000px"]
-*Tooling, tooling, ...*
+*Tooling, Tooling, ...*
 
 // ************** devops ************
 
 == Tools for a CD pipeline
 
-* Puppet/Chef to provision VMs
-* Git for SCM
-* Gerrit/Gitlab for code reviews
-* Maven
-* Jenkins + plugins
-* and of course… Fabric8!
+[.noredheader]
+|===
+a|* Git for SCM
+* Gerrit for code review
+* Gitlab/Gogs for git projects mngt
+* Apache Maven - build
+* Jenkins + plugins - automate
+* Microcontainers
+* and of course… Fabric8! a|
+[#block, top=25px, left=500px]
+image:fabric8-cd-tools.png[height="65%"]
+|===
 
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== {blank-space}
+
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
+
+[#cover-h1,left="0px",top="350px",width="2000px"]
+*Technology*
 
 // ************** fabric8 ************
 
@@ -220,14 +239,7 @@ image:fabric8.png[width="95%",height="95%"]
 == {blank-space}
 
 [#block,width="800px",top="0px"]
-image:fabric8-v2-2.png[width="80%",height="80%"]
-
-// ************** fabric v2 ************
-
-== Support Continuous Delivery
-
-[#block,width="800px",top="70px"]
-image:fabric8-cdci.png[width="95%",height="95%"]
+image:fabric8-diagram1.png[width="80%",height="80%"]
 
 // ************ fabric v2 *************
 == Modern HTML5 Architecture
@@ -302,7 +314,7 @@ image::fabric8-pod.png[]
 
 image::fabric8-pod-port.png[]
 
-* Ports can be exposed *externaly*
+* Ports can be *exposed*
 
 // ************** kubernetes ************
 
@@ -320,6 +332,12 @@ image::fabric8-service-pod.png[]
 
 * Kube Service *loadbalanced* through the pods using *HA-Proxy* & *Routes*
 
+// ************** fabric v2 ************
+
+== Support Continuous Delivery
+
+[#block,width="800px",top="70px"]
+image:fabric8-cdci.png[width="95%",height="95%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -358,13 +376,6 @@ image::openshift_logo.png[width="30%,height="30%"]
 [#block,width="800px",top="120px"]
 image:ose-v3.png[width="95%",height="95%"]
 
-// ************** openshift ************
-
-== Scale IT Like a Factory with PaaS
-
-[#block,width="800px",top="100px"]
-image:openshift-paas.png[width="75%"]
-
 // ************** fabric v2 ************
 
 == Fabric8 Plugin
@@ -382,20 +393,6 @@ image:openshift-paas.png[width="75%"]
 * fabric8:delete-pods
 
 * http://fabric8.io/gitbook/mavenPlugin.html
-
-// ************** fabric v2 ************
-
-== Support Continuous Delivery
-
-[#block,width="800px",top="70px"]
-image:cd_process_diagram.png[width="95%",height="95%"]
-
-// ************** devops ************
-
-== Sample Flow
-
-[#block,width="800px",top="100px"]
-image:cd-sample-flow.png[width="95%",height="95%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]

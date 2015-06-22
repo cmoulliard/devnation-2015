@@ -11,7 +11,7 @@ a| * http://fabric8.io[OpenSource Project]
 |===
 
 [#block,width="100px",top="100px",left="500px"]
-image:fabric-diagram.png[width="85%"]
+image:fabric8-diagram.png[width="85%"]
 
 // ************** fabric8 ************
 
@@ -20,7 +20,7 @@ image:fabric-diagram.png[width="85%"]
 * Simplification (deployment & container provisioning)
 
 [#block,width="100px",top="150px",left="0px"]
-image:fabric-diagram1.png[width="95%"]
+image:fabric8-diagram1.png[width="95%"]
 
 // ************** fabric8 ************
 
@@ -54,3 +54,24 @@ image::fabric-camel.png[width="75%"]
 
 [.newline]
 * Decouple Devs & Ops
+
+// ************** openshift ************
+
+== Scale IT Like a Factory with PaaS
+
+[#block,width="800px",top="100px"]
+image:openshift-paas.png[width="75%"]
+
+// ************** fabric v2 ************
+
+== Support Continuous Delivery
+
+[#block,width="800px",top="70px"]
+image:cd_process_diagram.png[width="95%",height="95%"]
+
+// ************** devops ************
+
+== Sample Flow
+
+[#block,width="800px",top="100px"]
+image:cd-sample-flow.png[width="95%",height="95%"]
