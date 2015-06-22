@@ -198,11 +198,11 @@ image:worked-fine-in-dev.png[width="80%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,left="0px",top="350px",width="2000px"]
-*Tooling, Tooling, ...*
+*Requirements to support CD*
 
 // ************** devops ************
 
-== Tools for a CD pipeline
+== Tools, tools
 
 [.noredheader]
 |===
@@ -225,43 +225,7 @@ image:fabric8-cd-tools.png[height="65%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,left="0px",top="350px",width="2000px"]
-*Technology*
-
-// ************** fabric8 ************
-
-== {blank-space}
-
-[#block,width="800px",top="0px"]
-image:fabric8.png[width="95%",height="95%"]
-
-// ************** fabric8 ************
-
-== {blank-space}
-
-[#block,width="800px",top="0px"]
-image:fabric8-diagram1.png[width="80%",height="80%"]
-
-// ************ fabric v2 *************
-== Modern HTML5 Architecture
-
-[.newline]
-* Hawtio *=* A combination of the most *powerful web* technologies
-
-* image:html5.jpeg[100,100] {icon-plus} image:javascript.jpeg[100,100] {icon-plus} image:AngularJS-small.png[] {icon-plus} image:rest-api.png[100,100] {icon-plus} image:jolokia.png[200,200]
-
-[.newline]
-** Front end : HTML5 with *AngularJS* & **JSON / REST**
-** Backend : Java Servlet & **Jolokia** JMX gateway
-
-// ************ fabric v2 *************
-== Communication ...
-
-** *Web* client communicates to Jolokia *agent* over HTTP(S)
-** Send Messages represented in *JSON* Format to Jolokia REST Servlet
-** Jolokia *translates* the request/response & map the JSON payload with JMX Calls
-
-[#block,width="800px",top="300px"]
-image:hawtio-sequence.png[]
+*Microcontainer*
 
 // ************** docker ************
 
@@ -288,6 +252,16 @@ image::docker-filesystems-multilayer.png[width="60%,height="60%"]
 
 * Top of a Union FS mounted with immutable images
 * Benefits: *portability*, *reusability*, versioning, application-centric
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== {blank-space}
+
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
+
+[#cover-h1,left="0px",top="350px",width="2000px"]
+*Management platform*
 
 // ************** kubernetes ************
 
@@ -332,12 +306,70 @@ image::fabric8-service-pod.png[]
 
 * Kube Service *loadbalanced* through the pods using *HA-Proxy* & *Routes*
 
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== {blank-space}
+
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
+
+[#cover-h1,left="0px",top="350px",width="2000px"]
+*Tooling to Fabric8 & provision microcontainer*
+
+// ************** fabric8 ************
+
+== {blank-space}
+
+[#block,width="800px",top="0px"]
+image:fabric8.png[width="95%",height="95%"]
+
+// ************** fabric8 ************
+
+== {blank-space}
+
+[#block,width="800px",top="0px"]
+image:fabric8-diagram1.png[width="80%",height="80%"]
+
+// ************ fabric v2 *************
+== Modern HTML5 Architecture
+
+[.newline]
+* Hawtio *=* A combination of the most *powerful web* technologies
+
+* image:html5.jpeg[100,100] {icon-plus} image:javascript.jpeg[100,100] {icon-plus} image:AngularJS-small.png[] {icon-plus} image:rest-api.png[100,100] {icon-plus} image:jolokia.png[200,200]
+
+[.newline]
+** Front end : HTML5 with *AngularJS* & **JSON / REST**
+** Backend : Java Servlet & **Jolokia** JMX gateway
+
+// ************ fabric v2 *************
+== Communication ...
+
+** *Web* client communicates to Jolokia *agent* over HTTP(S)
+** Send Messages represented in *JSON* Format to Jolokia REST Servlet
+** Jolokia *translates* the request/response & map the JSON payload with JMX Calls
+
+[#block,width="800px",top="300px"]
+image:hawtio-sequence.png[]
+
 // ************** fabric v2 ************
 
-== Support Continuous Delivery
+== http://fabric8.io/gitbook/mavenPlugin.html[Fabric8 Maven Plugin]
 
-[#block,width="800px",top="70px"]
-image:fabric8-cdci.png[width="95%",height="95%"]
+* docker:build {icon-arrow-right} Build image of app
+
+* fabric8:json {icon-arrow-right} generates Kube MetaData App
+
+* fabric8:apply {icon-arrow-right} deploy/redeploy on Openshift
+
+* and more to create-env, delete-pods, create-routes
+
+// ************** fabric v2 ************
+
+== {blank-space}
+
+[#block,width="800px",top="0px"]
+image:fabric8-cdci.png[]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -348,6 +380,16 @@ image::{revealjs_cover_image}[]
 
 [#cover-h1,width="600px",left="0px",top="400px"]
 *Bringing this all together*
+
+// ************** page ************
+[data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
+== {blank-space}
+
+[#block,width="200px",left="70px",top="0px"]
+image::{revealjs_cover_image}[]
+
+[#cover-h1,left="0px",top="350px",width="2000px"]
+*Cloud Platform*
 
 // ************** openshift ************
 
@@ -376,24 +418,6 @@ image::openshift_logo.png[width="30%,height="30%"]
 [#block,width="800px",top="120px"]
 image:ose-v3.png[width="95%",height="95%"]
 
-// ************** fabric v2 ************
-
-== Fabric8 Plugin
-
-* docker:build
-* docker:push
-
-[.newline]
-* fabric8:json
-* fabric8:create-env
-* fabric8:publish
-
-[.newline]
-* fabric8:create-routes
-* fabric8:delete-pods
-
-* http://fabric8.io/gitbook/mavenPlugin.html
-
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
 == {blank-space}
@@ -411,7 +435,8 @@ image::{revealjs_cover_image}[]
 |===
 
 .2+|image:questions.png[width="95%",height="95%"]
-a|* Twitter : @cmoulliard, @christianposta
+a|* Twitter : *@cmoulliard*
+*@christianposta*
 |===
 
 * More info {icon-arrow-right}
