@@ -220,7 +220,7 @@ image:fabric8.png[width="95%",height="95%"]
 == {blank-space}
 
 [#block,width="800px",top="0px"]
-image:fabric8-v2.png[width="95%",height="95%"]
+image:fabric8-v2-2.png[width="80%",height="80%"]
 
 // ************** fabric v2 ************
 
