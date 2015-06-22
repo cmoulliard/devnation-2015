@@ -425,8 +425,11 @@ image:ose-v3.png[width="95%",height="95%"]
 [#block,width="200px",left="70px",top="0px"]
 image::{revealjs_cover_image}[]
 
-[#cover-h1,width="600px",left="0px",top="400px"]
-*Demo ...*
+[#cover-h1,width="600px",left="0px",top="500px"]
+*Demo*
+
+image::jenkins-pipeline.png[width="95%",height="95%"]
+
 
 // *********************************
 == Questions
