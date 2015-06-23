@@ -67,7 +67,7 @@ Email: cmoulliard@redhat.com |
 
 * The cost of change
 * CI/CD
-* Tooling
+* Technology
 * OpenShift
 * Fabric8
 * Demo
