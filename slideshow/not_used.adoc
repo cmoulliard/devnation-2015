@@ -109,3 +109,10 @@ image:believe.png[width="85%",height="85%"]
 
 [#block,width="800px",top="300px"]
 image:hawtio-sequence.png[]
+
+// ************** docker ************
+
+== Process vs OS
+
+[#block,width="800px",top="100px"]
+image:docker_vm_diagram.jpg[width="95%",height="95%"]

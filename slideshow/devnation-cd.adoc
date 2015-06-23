@@ -217,20 +217,22 @@ image::{revealjs_cover_image}[]
 
 // ************** docker ************
 
-== Process vs OS
+== Process
 
-[#block,width="800px",top="100px"]
-image:docker_vm_diagram.jpg[width="95%",height="95%"]
+[#block,width="800px",top="50px"]
+image:docker-animated-1.gif[]
 
 // ************** docker ************
 
 == Docker
 
-[#block,width="800px",top="150px"]
-image:docker-logo.png[width="55%",height="55%"]
+* *Container runtime*, *image* distribution, *Process* launcher
 
-* *Container runtime* & *image* distribution
-* *Launch Process* (cmd/entrypoint)
+[#block,width="650px",top="150px"]
+image:docker-animated-2.gif[]
+
+[#block,width="100px",top="-20px",left="200px"]
+image:docker-logo.png[width="25%",height="25%"]
 
 // ************** docker ************
 
@@ -240,6 +242,9 @@ image::docker-filesystems-multilayer.png[width="60%,height="60%"]
 
 * Top of a Union FS mounted with immutable images
 * Benefits: *portability*, *reusability*, versioning, application-centric
+
+[#block,width="150px",top="0px",left="350px"]
+image:dockerfile.png[width="65%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
@@ -266,8 +271,8 @@ image::kubernetes-logo.png[width="25%",height="25%"]
 
 == Kubernetes
 
-[#block,width="800px",left="0px",top="250px"]
-image::kubernetes-platform.png[]
+[#block,width="800px",left="0px",top="50px"]
+image:kubernetes-platform.png[]
 
 // ************** kubernetes ************
 
@@ -300,6 +305,15 @@ image::fabric8-pod-volume.png[]
 image::fabric8-service-pod.png[]
 
 * Kube Service *loadbalanced* through the pods using *HA-Proxy* & *Routes*
+
+// ************** kubernetes ************
+
+== Kube Application JSon
+
+[.noredheader]
+|===
+| image:kubernetes-json-1.png[width="85%"] | image:kubernetes-json-2.png[width="65%"]
+|===
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
