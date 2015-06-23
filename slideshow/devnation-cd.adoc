@@ -360,7 +360,7 @@ image:ose-v3.png[width="95%",height="95%"]
 image::{revealjs_cover_image}[]
 
 [#cover-h1,left="0px",top="350px",width="2000px"]
-*Tooling to Fabric8 & provision microcontainer*
+*Tooling, prepackaged apps*
 
 // ************** fabric8 ************
 
@@ -386,14 +386,14 @@ image:fabric8-diagram1.png[width="80%",height="80%"]
 
 * fabric8:apply {icon-arrow-right} deploy/redeploy on Openshift
 
-* and more to create-env, delete-pods, create-routes
+* and more to create env, delete pods, create routes
 
 // ************** fabric v2 ************
 
 == {blank-space}
 
 [#block,width="800px",top="0px"]
-image:fabric8-cdci.png[]
+image:fabric8-cdci.png[width="80%"]
 
 // ************** page ************
 [data-background-image="revealjs-redhat/image/1156524-bg_redhat.png" data-background-color="#cc0000"]
