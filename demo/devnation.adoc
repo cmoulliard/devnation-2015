@@ -26,10 +26,10 @@
     export KUBERNETES_DOMAIN=vagrant.local
     export KUBERNETES_TRUST_CERT="true"
 ```
-* Authentify the OSC user with the openshift platform
+* Authentify the OS user with the openshift platform
 ```
-    osc project default
-    osc login -u admin -p admin https://172.28.128.4:8443  
+    os project default
+    os login -u admin -p admin https://172.28.128.4:8443  
 ```
 * Add the name of the application to the hosts file 
 ```
@@ -37,8 +37,8 @@
 ```
 * Deploy the Fabric8 Base APP
 ```
-    osc process -v DOMAIN='vagrant.local' -f http://central.maven.org/maven2/io/fabric8/apps/base/2.1.11/base-2.1.11-kubernetes.json | osc create -f - 
-    osc process -v DOMAIN='vagrant.local' -f /Users/chmoulli/MyProjects/MyConferences/fuse-tech-2015/demo/base-2.1.11-kubernetes.json | osc create -f - 
+    os process -v DOMAIN='vagrant.local' -f http://central.maven.org/maven2/io/fabric8/apps/base/2.1.11/base-2.1.11-kubernetes.json | os create -f - 
+    os process -v DOMAIN='vagrant.local' -f /Users/chmoulli/MyProjects/MyConferences/fuse-tech-2015/demo/base-2.1.11-kubernetes.json | os create -f - 
 ```
 * Add the route for Fabric8
 ```
