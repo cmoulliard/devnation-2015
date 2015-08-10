@@ -26,7 +26,7 @@
     export KUBERNETES_DOMAIN=vagrant.local
     export KUBERNETES_TRUST_CERT="true"
 ```
-* Authentify the OS user with the openshift platform
+* Authentificate the OS user with the openshift platform
 ```
     oc project default
     oc login -u admin -p admin https://172.28.128.4:8443  
